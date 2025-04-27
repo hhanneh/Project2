@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+
+    <div class="header">
+        <h1> <a href="index.html">Movie Information</a></h1>
+    </div>
+
+    <div class="searchbar-container">
+        <form id="searchForm" class="searchbar">
+            <input type="text" placeholder="Search movies" name="q" id="searchInput" autocomplete="off">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+            <div id="suggestions"></div>
+        </form>
+
+        <select id="areaSelect">
+            <option value="101">Pääkaupunkiseutu</option>
+            <option value="102">Espoo</option>
+            <option value="103">Vantaa</option>
+            <option value="104">Kauniainen</option>
+            <option value="105">Tampere</option>
+            <option value="106">Turku</option>
+        </select>
+        
+    </div>
+
+    <div id="results"></div>
+    <div id="movieContainer"></div>
+    
+    <script src="script.js"></script>
     
 </body>
 </html>
